@@ -1,9 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+import homeLogo from "../../Assets/profilepic.jpeg";
 import Particle from "../Particle";
-import Home2 from "./Home2";
+
 import Type from "./Type";
+import About from "../About/About";
 
 function Home() {
   return (
@@ -12,6 +13,22 @@ function Home() {
         <Particle />
         <Container className="home-content">
           <Row>
+          <Col md={5} style={{ paddingBottom: 20 }}>
+                <img
+                  src={homeLogo}
+                  alt="home pic"
+                  className="img-fluid"
+                  style={{
+                        maxHeight: "450px",
+                        width: "300px",
+                        height: "650px",
+                        borderRadius: "10%",
+                        objectFit: "cover",
+                        opacity:".9",
+                  }}
+                />
+              </Col>
+
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
@@ -22,26 +39,21 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                <strong className="main-name"> GOPICHAND REDDY PULAGAM</strong>
+                <span className="profession">AEM Developer</span>
               </h1>
-
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <h2 style={{ paddingTop: 100 }} className="skill-heading">Tech-Stack
+              </h2>
+              <div style={{ paddingTop: 20, paddingLeft: 50, textAlign: "left" }}>
                 <Type />
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
-            </Col>
+
           </Row>
         </Container>
       </Container>
-      <Home2 />
+      <About />
     </section>
   );
 }

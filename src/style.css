@@ -15,7 +15,7 @@ html {
 }
 
 .purple {
-  color: var(--imp-text-color) !important;
+  color: #0a58ca !important;
 }
 
 button:focus {
@@ -76,10 +76,10 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
-  transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
-  backdrop-filter: blur(15px) !important;
+  background-color: #000 !important;
+  transition: all 0.5s ease-out 0s !important;
+  box-shadow: 0px 0px 80px 0px #111 !important;
+  backdrop-filter: blur(10px) !important;
 }
 
 .navbar {
@@ -194,7 +194,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #0a58ca;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -251,13 +251,12 @@ button:focus {
 }
 
 .home-header {
-  padding-top: 80px !important;
+  padding-top: 100px !important;
 }
 
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -271,33 +270,64 @@ button:focus {
 }
 
 .heading {
-  font-size: 2.4em !important;
-  padding-left: 50px !important;
+  font-size: 1.4em !important;
+  padding-left: 45px !important;
+  border-bottom: 4px Groove #fff;
+  border-image: linear-gradient(to right, transparent 6%, #fff 20%, transparent 40%);
+  border-image-slice: 1;
 }
 
 .heading-name {
-  font-size: 2.5em !important;
+  font-size: 2em !important;
+  border-bottom: 5px Groove #0a58ca;
   padding-left: 45px !important;
+  padding-bottom:8px;
+  border-image: linear-gradient(to right, transparent 5%, #0a58ca 50%, transparent 85%);
+  border-image-slice: 1;
 }
 
+.profession {
+  font-size: 15px;
+  display: inline-block;
+  background-color: #0a58ca;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 8px;
+  margin-left: 40px;
+  font-weight: 300;
+}
+
+.skill-heading{
+  font-size: 2em !important;
+  border-bottom: 5px Groove #0a58ca;
+  padding-left: 45px !important;
+  padding-bottom:8px;
+  border-image: linear-gradient(to right, transparent 6%, #fff 25%, transparent 45%);
+  border-image-slice: 1;
+  background: linear-gradient(90deg, aqua, red, #fff, #acacac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 .main-name {
-  color: #cd5ff8;
+  color: #0a58ca;
 }
 
 .Typewriter__wrapper {
-  font-size: 2.2em !important;
-  color: #be6adf !important;
-  font-weight: 600 !important;
+  font-size: 1em !important;
+  color: white !important;
+  font-weight: 200 !important;
 }
 .Typewriter__cursor {
-  font-size: 2.4em !important;
-  color: #b562d6 !important;
+  font-size: 1.5em !important;
+  color: white !important;
 }
 
 @media (max-width: 767px) {
   .Typewriter__wrapper {
-    font-size: 1.4em !important;
-    font-weight: 500 !important;
+    font-size: 1em !important;
+    font-weight: 200 !important;
     position: absolute !important;
   }
   .Typewriter__cursor {
@@ -402,7 +432,8 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  position: fixed;
+  background-color: #000;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -439,6 +470,7 @@ button:focus {
 }
 
 .blockquote-footer {
+text-align:right;
   color: #a588c0 !important;
 }
 /* --------- */
@@ -546,7 +578,7 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  background-image: #fff !important;
   color: white !important;
 }
 
@@ -555,7 +587,7 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1.7px solid #0a58ca !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;

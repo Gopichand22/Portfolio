@@ -6,14 +6,14 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Software Developer",
-          "Freelancer",
-          "MERN Stack Developer",
-          "Open Source Contributor",
+          "AEM Full Stack Developer",
+          "Expertise in AEM 6.4 | 6.5 | AEMaaCS",
+          "AEM Sites | AEM Assets | AEM Migration JSP to HTL",
+          "Building Enterprise Web Platforms",
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        deleteSpeed: 100,
       }}
     />
   );
