@@ -75,7 +75,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/resume"
+                to="/achievements"
                 onClick={() => updateExpanded(false)}
               >
                 <AiFillTrophy style={{ marginBottom: "2px" }} /> Achievements

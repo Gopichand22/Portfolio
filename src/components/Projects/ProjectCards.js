@@ -1,40 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
+import Modal from "react-bootstrap/Modal";
 
-function ProjectCards(props) {
+function ProjectCard({ imgPath, title, description, details, headline, icon: IconComponent, index }) {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
-    <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
-        </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
+    <>
+      <Card className="project-card-view text-center">
+      <div className="card-image-wrapper">
+        <Card.Img variant="top" src={imgPath} alt="project image" className="card-image" style={index === 1 ? { transform: "scale(2.5)" } : {}} />
+      </div>
+        <Card.Body className="card-body-content">
+          <Card.Title className="card-headline">{headline}</Card.Title>
+          <Card.Text className="card-description" style={{ textAlign: "justify", marginTop: "10px" }}>
+            {description}
+          </Card.Text>
+        <div className="card-button-wrapper">
+          <Button className="button-model" variant="primary" onClick={handleShow}>
+            View Details
           </Button>
-        )}
-      </Card.Body>
-    </Card>
+          </div>
+        </Card.Body>
+      </Card>
+
+
+      <Modal show={show} onHide={handleClose} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>{title} - Details</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className="container">
+            <div className="row">
+              <div className="col-6 mb-3">
+                <img src={imgPath} alt="project" className="img-fluid rounded" />
+              </div>
+              <div className="col-6 mb-3">
+                <img src={imgPath} alt="project" className="img-fluid rounded" />
+              </div>
+              {/* Add more images or conditionally render from an array */}
+            </div>
+            <p>{details}</p>
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </>
   );
 }
-export default ProjectCards;
+
+export default ProjectCard;
