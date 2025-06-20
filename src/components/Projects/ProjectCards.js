@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-function ProjectCard({ imgPath, title, description, details, headline, icon: IconComponent, index }) {
+function ProjectCard({ imgPath, title, description, details, headline, icon: IconComponent, index, media }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -36,11 +36,8 @@ function ProjectCard({ imgPath, title, description, details, headline, icon: Ico
         <Modal.Body>
           <div className="container">
             <div className="row">
-              <div className="col-6 mb-3">
-                <img src={imgPath} alt="project" className="img-fluid rounded" />
-              </div>
-              <div className="col-6 mb-3">
-                <img src={imgPath} alt="project" className="img-fluid rounded" />
+              <div className="col-12 mb-3">
+                <img src={media} alt="project" className="img-fluid rounded" />
               </div>
               {/* Add more images or conditionally render from an array */}
             </div>
