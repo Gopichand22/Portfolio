@@ -41,7 +41,7 @@ function Home() {
               <h1 className="heading-name">
                 I'M
                 <strong className="main-name"> GOPICHAND REDDY PULAGAM</strong>
-                <span className="profession">AEM Developer</span>
+                <span className="profession">AEM Lead Developer</span>
               </h1>
               <h2 style={{ paddingTop: 100 }} className="skill-heading">Tech-Stack
               </h2>
