@@ -22,7 +22,7 @@ function About() {
             </h1>
             <Card className="quote-card-view">
                   <Card.Body>
-                    <h1>Need to update this page</h1>
+                    <h1>Need to update this page - due to tight projet work - not getting time to do it</h1>
                   </Card.Body>
                 </Card>
           </Col>
