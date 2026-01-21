@@ -28,7 +28,22 @@ function Home() {
                         opacity:".9",
                   }}
                 />
-              </Col>
+                <div style={{ textAlign: "center", marginTop: "8px" }}>
+                <span
+                  style={{
+                    fontSize: "12px",
+                    padding: "4px 10px",
+                    borderRadius: "12px",
+                    background: "#ffc107",
+                    color: "#000",
+                    fontWeight: "600",
+                    letterSpacing: "1px"
+                  }}
+                >
+                  BETA VERSION
+                </span>
+              </div>
+       </Col>
 
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
