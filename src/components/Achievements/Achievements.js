@@ -1,9 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import laptopImg from "../../Assets/about.png";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
 
 function About() {
   return (
