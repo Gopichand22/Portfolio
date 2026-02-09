@@ -7,8 +7,6 @@ import Toolstack from "./Toolstack";
 import Card from "react-bootstrap/Card";
 
 function About() {
-  const [isModern, setIsModern] = useState(true);
-
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -64,40 +62,6 @@ function About() {
           <h1 className="project-heading mb-0 me-3">
             Professional <strong className="purple">Skillset</strong>
           </h1>
-
-          {/* Toggle Button */}
-          <div
-            onClick={() => setIsModern(!isModern)}
-            style={{
-              width: "60px",
-              height: "30px",
-              borderRadius: "20px",
-              padding: "3px",
-              backgroundColor: isModern ? "#00cc66" : "#fff",
-              cursor: "pointer",
-              position: "relative",
-              boxShadow: "inset 2px 2px 6px #00000066, inset -2px -2px 6px #ffffff55",
-              transition: "background-color 0.3s ease",
-            }}
-          >
-            <div
-              style={{
-                width: "24px",
-                height: "24px",
-                borderRadius: "50%",
-                backgroundColor: isModern ? "#004d26" : "#666",
-                position: "absolute",
-                top: "3px",
-                left: isModern ? "32px" : "3px",
-                transition: "left 0.3s ease, background-color 0.3s ease",
-                boxShadow: "2px 2px 4px rgba(0,0,0,0.4), -2px -2px 4px rgba(255,255,255,0.2)",
-              }}
-            ></div>
-          </div>
-        </div>
-
-        {/* Component Switch */}
-        {isModern ? <Techstack /> : <TechstackClassic />}
 
         <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
