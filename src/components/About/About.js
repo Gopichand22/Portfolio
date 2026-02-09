@@ -57,8 +57,6 @@ function About() {
           </Col>
         </Row>
 
-        {/* Heading + Toggle */}
-        <div className="d-flex align-items-center justify-content-center mb-4">
           <h1 className="project-heading mb-0 me-3">
             Professional <strong className="purple">Skillset</strong>
           </h1>
