@@ -1,10 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
+import Techstack from "./Techstack";
 import Toolstack from "./Toolstack";
 import Card from "react-bootstrap/Card";
 
 function About() {
+
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -55,10 +57,11 @@ function About() {
           </Col>
         </Row>
 
-          <h1 className="project-heading mb-0 me-3">
-            Professional <strong className="purple">Skillset</strong>
-          </h1>
 
+        <h1 className="project-heading mb-0 me-3">
+            Professional <strong className="purple">Skillset</strong>
+        </h1>
+        <Techstack />
         <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
         </h1>
