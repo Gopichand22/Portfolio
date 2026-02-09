@@ -274,7 +274,7 @@ button:focus {
   font-size: 1.4em !important;
 }
 
-.heading-name span{
+.heading-name .profession{
   text-align: right;
 }
 
@@ -285,7 +285,6 @@ button:focus {
   color: white;
   padding: 4px 10px;
   border-radius: 8px;
-  margin-left: 40px;
   font-weight: 300;
 }
 
