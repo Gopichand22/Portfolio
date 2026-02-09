@@ -5,7 +5,6 @@ import Particle from "../Particle";
 
 import Type from "./Type";
 import About from "../About/About";
-import { FaHandSparkles } from "react-icons/fa";
 
 function Home() {
   return (
@@ -46,15 +45,12 @@ function Home() {
        </Col>
 
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hey Hello..!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  <FaHandSparkles />
-                </span>
+              <h1 style={{ paddingBottom: 10 }} className="heading">
+                Hello, I’m
               </h1>
 
               <h1 className="heading-name">
-                I'M
+
                 <strong className="main-name"> GOPICHAND REDDY PULAGAM</strong>
                 <span className="profession">AEM Lead Developer</span>
               </h1>

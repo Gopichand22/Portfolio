@@ -145,7 +145,7 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #0a58ca !important;
+    background-color: #063880 !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -272,19 +272,10 @@ button:focus {
 
 .heading {
   font-size: 1.4em !important;
-  padding-left: 45px !important;
-  border-bottom: 4px Groove #fff;
-  border-image: linear-gradient(to right, transparent 6%, #fff 20%, transparent 40%);
-  border-image-slice: 1;
 }
 
-.heading-name {
-  font-size: 2em !important;
-  border-bottom: 5px Groove #0a58ca;
-  padding-left: 45px !important;
-  padding-bottom:8px;
-  border-image: linear-gradient(to right, transparent 5%, #0a58ca 50%, transparent 85%);
-  border-image-slice: 1;
+.heading-name span{
+  text-align: right;
 }
 
 .profession {
