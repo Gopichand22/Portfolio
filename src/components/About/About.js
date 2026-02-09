@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Techstack from "./Techstack";
-import TechstackClassic from "./TechstackClassic";
 import Toolstack from "./Toolstack";
 import Card from "react-bootstrap/Card";
 
