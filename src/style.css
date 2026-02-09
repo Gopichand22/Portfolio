@@ -290,11 +290,6 @@ button:focus {
 
 .skill-heading{
   font-size: 2em !important;
-  border-bottom: 5px Groove #0a58ca;
-  padding-left: 45px !important;
-  padding-bottom:8px;
-  border-image: linear-gradient(to right, transparent 6%, #fff 25%, transparent 45%);
-  border-image-slice: 1;
   background: linear-gradient(90deg, aqua, red, #fff, #acacac);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
