@@ -27,3 +27,10 @@ yarn-error.log*
 
 Server/node_modules
 Server/config.js
+
+### JetBrains ###
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
