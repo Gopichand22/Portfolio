@@ -57,11 +57,25 @@ function About() {
           </Col>
         </Row>
 
-
+        <hr style={{
+            width: "90%",
+            margin: "20px auto",
+            border: "none",
+            height: "6px",
+            background: "linear-gradient(to right, transparent, #0a58ca, transparent)"
+        }} />
         <h1 className="project-heading mb-0 me-3">
             Professional <strong className="purple">Skillset</strong>
         </h1>
         <Techstack />
+
+        <hr style={{
+            width: "90%",
+            margin: "20px auto",
+            border: "none",
+            height: "6px",
+            background: "linear-gradient(to right, transparent, #0a58ca, transparent)"
+        }} />
         <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
         </h1>

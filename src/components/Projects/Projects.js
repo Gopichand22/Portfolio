@@ -90,13 +90,20 @@ function Projects() {
     <Container fluid className="project-section">
       <Particle />
       <Container>
+
         <h1 className="project-heading">
           My Work <strong className="purple">Profiles </strong>
         </h1>
         <p style={{ color: "white" }}>
           Projects That Shaped My AEM Developer Journey.
         </p>
-
+        <hr style={{
+            width: "90%",
+            margin: "20px auto",
+            border: "none",
+            height: "6px",
+            background: "linear-gradient(to right, transparent, #0a58ca, transparent)"
+        }} />
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {projectList.map((project, index) => (
             <Col md={6} className="project-card" key={index}>
@@ -112,8 +119,16 @@ function Projects() {
                 media={project.media}
               />
             </Col>
+
           ))}
         </Row>
+        <hr style={{
+            width: "90%",
+            margin: "20px auto",
+            border: "none",
+            height: "6px",
+            background: "linear-gradient(to right, transparent, #0a58ca, transparent)"
+        }} />
       </Container>
     </Container>
   );

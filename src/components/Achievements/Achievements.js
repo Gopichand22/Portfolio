@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 
 function About() {
   return (
-    <Container fluid className="about-section">
+    <Container fluid className="achievements-section">
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
@@ -28,7 +28,13 @@ function About() {
           </Col>
 
         </Row>
-
+        <hr style={{
+            width: "90%",
+            margin: "20px auto",
+            border: "none",
+            height: "6px",
+            background: "linear-gradient(to right, transparent, #0a58ca, transparent)"
+        }} />
 
       </Container>
     </Container>

@@ -829,3 +829,7 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+.achievements-section{
+  padding-top: 150px !important;
+}

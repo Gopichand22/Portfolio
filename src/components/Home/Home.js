@@ -70,11 +70,11 @@ function Home() {
         </Container>
       </Container>
       <hr style={{
-        width: "80%",
-        margin: "40px auto",
-        border: "none",
-        height: "1px",
-        background: "linear-gradient(to right, transparent, #0a58ca, transparent)"
+          width: "90%",
+          margin: "20px auto",
+          border: "none",
+          height: "6px",
+          background: "linear-gradient(to right, transparent, #0a58ca, transparent)"
       }} />
 
       <About />
