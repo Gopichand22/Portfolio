@@ -32,28 +32,63 @@ function About() {
             <Card className="quote-card-view">
               <Card.Body>
                 <blockquote className="blockquote mb-0" style={{ textAlign: "justify" }}>
+
                   <p>
-                    Hi! I'm <span className="purple">Gopichand Reddy</span>, an{" "}
-                    <span className="purple">AEM Full Stack Developer</span> currently
-                    working at <strong className="purple">IBM</strong> (as of June 2025),
-                    based in Bangalore, India.
+                    I have over five years of hands-on experience working with{" "}
+                    <span className="purple">Adobe Experience Manager</span> across{" "}
+                    <span className="purple">Sites, Assets, and Dynamic Media</span> in large
+                    enterprise environments. My core strengths include designing and developing
+                    custom components using <span className="purple">HTL and Sling Models</span>,
+                    building <span className="purple">OSGi services and servlets</span>, and
+                    ensuring high code quality through best practices, modular architecture,
+                    and performance optimization.
                   </p>
+
                   <p>
-                    I completed my engineering in{" "}
-                    <span className="purple">Computer Science</span> in 2020 and began my
-                    career at <span className="purple">Mindtree</span>...
+                    In my first major engagement, I migrated legacy{" "}
+                    <span className="purple">AEM 6.4 JSP-based components</span> to modern{" "}
+                    <span className="purple">AEM 6.5 HTL implementations</span>, separating
+                    tightly coupled logic into clean backend services and reusable front-end
+                    templates. I later built new components from scratch and enhanced existing
+                    ones to improve author experience and performance, and contributed to{" "}
+                    <span className="purple">RTL support for Arabic sites</span> to enable
+                    seamless multilingual delivery.
                   </p>
+
                   <p>
-                    I've gained valuable experience across the{" "}
-                    <span className="purple">AEM stack</span>...
+                    I led the <span className="purple">Carbon Design System</span> upgrade
+                    from version 1 to version 2, a transformation that required full
+                    re-architecture of the front-end layer and a structured implementation
+                    strategy. I have also worked on complex{" "}
+                    <span className="purple">DAM migrations</span> from AEM 6.5 on-prem to{" "}
+                    <span className="purple">AEM as a Cloud Service</span>, solving challenges
+                    around metadata, renditions, and environment differences.
                   </p>
-                  <p className="gopichand-quote" style={{ color: "#0a58ca", textAlign: "right" }}>
-                    If you start something, don’t stop until it’s done - even if you fail.
+
+                  <p>
+                    More recently, I contributed to{" "}
+                    <span className="purple">real-time and two-way asset synchronization</span>{" "}
+                    between on-prem and AEMaaCS, and I am currently involved in large-scale
+                    migration of third-party pages into native AEM using a custom migration
+                    framework. I have also delivered{" "}
+                    <span className="purple">Edge Delivery Services POCs</span> using
+                    document-based and Universal Editor approaches, creating blocks and
+                    presenting solutions directly to clients.
                   </p>
+
+                  <p
+                    className="gopichand-quote"
+                    style={{ color: "#0a58ca", textAlign: "right" }}
+                  >
+                    Building experiences is not just code — it’s architecture with purpose.
+                  </p>
+
                   <footer className="blockquote-footer">Gopichand</footer>
+
                 </blockquote>
               </Card.Body>
             </Card>
+
           </Col>
         </Row>
 
