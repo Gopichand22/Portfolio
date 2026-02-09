@@ -17,7 +17,7 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+            <h1 style={{paddingBottom: "20px" }}>
               <strong className="purple">Achievements</strong> in my career
             </h1>
             <Card className="quote-card-view">

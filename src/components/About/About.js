@@ -20,11 +20,11 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+            <h1 style={{paddingBottom: "20px" }}>
               Know About{" "}
               <strong
                 className="purple"
-                style={{ fontSize: "55px", textDecoration: "underline" }}
+                style={{textDecoration: "underline" }}
               >
                 ME
               </strong>
